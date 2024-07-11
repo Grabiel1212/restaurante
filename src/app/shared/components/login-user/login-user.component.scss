@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+    padding: 0; /* Elimina cualquier padding */
+    margin: 0; /* Elimina cualquier margen */
+  }
+  
+  .custom-card {
+    width: 400px; /* Ancho deseado de la tarjeta */
+    height: auto; /* Altura automática para ajustar al contenido */
+    padding: 30px; /* Añade padding a la tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+    border-radius: 8px; /* Bordes redondeados */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .rounded-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box;
+  }
+  
+  .btn-login {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Ancho completo del botón */
+    text-align: center; /* Centra el texto del botón */
+    margin-bottom: 20px; /* Agrega un margen inferior */
+  }
+  
+  .btn-login:hover {
+    background-color: #0056b3;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .google-button {
+    margin-top: 20px; /* Agrega un margen superior para separar el botón de Google */
+  }
+  

@@ -1,0 +1,73 @@
+/* Estilo para el contenedor del encabezado */
+.pedido-header {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos para el botón de crear */
+.crear-button .p-button {
+  border-radius: 100px; /* Hace el botón más redondo */
+  font-size: 1.2rem; /* Tamaño de fuente más grande */
+  padding: 5rem 2rem; /* Ajusta el padding para hacer el botón más grande */
+}
+  .pedido-header .crear-button {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+  }
+  
+  .pedido-header .search-input {
+    position: relative;
+    flex-grow: 1;
+  }
+  
+  .pedido-header .search-input input {
+    font-size: 1.2rem;
+    padding-left: 2rem; /* Espacio para el ícono */
+    width: 50%; /* Ocupa todo el espacio disponible */
+  }
+  
+  .pedido-header .search-icon {
+    position: absolute;
+    left: 0.5rem; /* Ajuste para centrar verticalmente dentro del input */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  /* Estilos para los botones de acción */
+/* listar-pedidos-enviados.component.scss */
+
+.table-cell {
+  font-size: 1.2rem; /* Tamaño de fuente más grande */
+  padding: 10px; /* Aumenta el espacio interno de las celdas */
+  text-align: center; /* Alineación del texto en el centro */
+}
+/* Estilos para los botones */
+/* Estilos para los botones */
+.action-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem; /* Margen superior opcional */
+}
+
+/* Estilos para los botones individuales */
+.p-button-rounded {
+  border-radius: 20px; /* Radio de borde para hacer los botones más redondos */
+  font-size: 1.2rem; /* Tamaño de fuente más grande */
+  padding: 0.5rem 1.5rem; /* Padding interno */
+  margin: 0 0.3rem; /* Margen más estrecho entre botones */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+
+.p-button-rounded1{
+  background-color: green;
+}
+.p-button-rounded2{
+  background-color: yellow;
+}
+.p-button-rounded3{
+  background-color: red;
+}

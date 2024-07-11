@@ -1,0 +1,19 @@
+.navbar {
+    justify-content: space-between;
+}
+.btn-primary {
+    --bs-btn-padding-y: 1rem;
+    --bs-btn-padding-x: 2rem;
+    --bs-btn-font-size: 1.25rem;
+    font-size: 0.90rem; /* Ajusta el tamaño de fuente */
+    padding: 0.40rem 0.40rem; /* Ajusta el padding para agrandar el botón */
+}
+.navbar .container-fluid {
+    padding-left: 50px; /* Ajusta el espacio a la izquierda */
+    padding-right: 15px; /* Ajusta el espacio a la derecha */
+}
+
+.navbar p {
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    margin-bottom: 0; /* Elimina el margen inferior */
+}

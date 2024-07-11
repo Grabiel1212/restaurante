@@ -1,0 +1,40 @@
+<h1>Reserva Basico</h1>
+<p-table
+    #tbalumosListar
+    [value]="Reservarr"
+    [paginator]="true"
+    [rows]="5"
+    [tableStyle]="{ 'min-width': '50rem' }"
+    [globalFilterFields]="['id', 'cliente', 'mesa', 'fecha','hora','pagado']"
+    [rowsPerPageOptions]="[5, 10, 20]"
+    responsiveLayout="scroll"
+>
+    <ng-template pTemplate="header">
+        <tr>
+            <th pSortableColumn="id">Id <p-sortIcon field="id"></p-sortIcon></th>
+            <th pSortableColumn="cliente">cliente <p-sortIcon field="cliente"></p-sortIcon></th>
+            <th pSortableColumn="mesa">mesa<p-sortIcon field="mesa"></p-sortIcon></th>
+            <th pSortableColumn="fecha">fecha<p-sortIcon field="fecha"></p-sortIcon></th>
+            <th pSortableColumn="hora">hora<p-sortIcon field="hora"></p-sortIcon></th>
+            <th pSortableColumn="pagado">pagado<p-sortIcon field="pagado"></p-sortIcon></th>
+            
+            <th>Acciones</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-Reservar>
+        <tr>
+            <td>{{ Reservar.id }}</td>
+            <td>{{Reservar.cliente }}</td>
+            <td>{{ Reservar.mesa }}</td>
+            <td>{{ Reservar.fecha}}</td>
+            <td>{{ Reservar.hora }}</td>
+            <td>{{ Reservar.pagado }}</td>
+        
+            <td>
+                <p-button [style]="ButtonStyle" icon="pi pi-eye" [rounded]="true" severity="info"></p-button>
+                <p-button [style]="ButtonStyle" icon="pi pi-pencil" [rounded]="true" severity="warning"></p-button>
+                <p-button [style]="ButtonStyle" icon="pi pi-trash" [rounded]="true" severity="danger"></p-button>
+            </td>
+        </tr>
+    </ng-template>
+</p-table>

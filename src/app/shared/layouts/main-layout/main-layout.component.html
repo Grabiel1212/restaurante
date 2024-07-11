@@ -1,0 +1,22 @@
+
+<app-menu-02></app-menu-02>
+
+
+<div class="main-content" [ngClass]="{'side-nav-collapsed': collapsed}">
+  <app-menu-bar [collapsed]="collapsed" (onToggleSideNav)="handleSideNavToggle($event)"></app-menu-bar>
+  <div class="content-wrapper">
+    <router-outlet></router-outlet>
+    <app-chatbot></app-chatbot>
+   
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+

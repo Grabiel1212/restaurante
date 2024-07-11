@@ -1,0 +1,30 @@
+/* listar-pedidos-enviados.component.scss */
+
+.container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100%; /* Ajusta la altura según sea necesario */
+}
+
+.form-container {
+    width: 100%; /* Ajusta el ancho del contenedor del formulario */
+    max-width: 800px; /* Ajusta el ancho máximo del formulario */
+    padding: 2rem; /* Ajusta el relleno interior */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+p-floatLabel input {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+}
+
+p-floatLabel label {
+    font-size: 1.2rem;
+}
+

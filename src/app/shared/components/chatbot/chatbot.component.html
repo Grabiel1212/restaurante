@@ -1,0 +1,18 @@
+<div class="positionFirex">
+    <div (click)="MensajePrueva()">
+        <img (click)="op.toggle($event)" class="imgbot" src="assets/img/chatbot/loli01.gif">
+        <p-overlayPanel #op>
+            <div></div>
+            <label for=""><strong> ¿Qué puedo ayudarte?</strong></label>
+            <ol>
+                <li>Olvidé mi contraseña</li>
+                <li>Cómo cambio mi usuario</li>
+                <li>Hablar cambiar de fondo</li>
+                <li>Hablar con un asesor</li>
+                <input type="text" value="">
+                <button>Enviar</button>
+            </ol>
+            <div></div>
+        </p-overlayPanel>
+    </div>
+</div>

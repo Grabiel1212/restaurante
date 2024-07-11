@@ -1,0 +1,46 @@
+.main-content {
+  display: flex;
+  height: 100%; /* Ajusta según el diseño deseado */
+}
+
+.app-menu-bar {
+  width: 160px; /* Ajusta el ancho del menú lateral según tu diseño */
+  transition: width 0.3s ease; /* Transición suave para el ancho */
+}
+
+.side-nav-collapsed .app-menu-bar {
+  width: 60px; /* Ancho del menú lateral colapsado */
+}
+
+.content-wrapper {
+  flex: 1;
+  padding: 20px; /* Espacio interior para el contenido */
+  transition: margin-left 0.3s ease; /* Transición suave para el margen izquierdo */
+  margin-left: 80px; /* Margen izquierdo inicial del contenido */
+}
+
+.side-nav-collapsed .content-wrapper {
+  margin-left: 200px; /* Margen izquierdo del contenido cuando el menú está colapsado */
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* Ajusta la dirección del flexbox para apilar elementos en dispositivos móviles */
+  }
+  
+  .app-menu-bar {
+    width: 100%; /* Ancho del menú lateral para dispositivos móviles */
+  }
+  
+  .side-nav-collapsed .content-wrapper {
+    margin-left: 0; /* Margen izquierdo del contenido para dispositivos móviles cuando el menú está colapsado */
+  }
+}
+
+
+
+
+
+
+
+

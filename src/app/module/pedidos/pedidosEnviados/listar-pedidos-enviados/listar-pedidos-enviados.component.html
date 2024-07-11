@@ -1,0 +1,50 @@
+<p-table 
+
+#TblPedidoListar
+    [value]="pedidosE"
+    [paginator]="true"
+    [rows]="5"
+    [tableStyle]="{ 'min-width': '50rem' }"
+    [globalFilterFields]="['id', 'nombre', 'apellids', 'fecha','menu','cantidad','total']"
+    [rowsPerPageOptions]="[5, 10, 20]"
+
+>
+<ng-template pTemplate="caption">
+  <div class="pedido-header">
+    <p-button (onClick)="onClickCrearPedido()" label="Crear" icon="pi pi-plus" class="crear-button"></p-button>
+    <div class="search-input">
+      <i class="pi pi-search"></i>
+      <input pInputText type="text" (input)="applyFilterGlobal($event, 'contains')" placeholder="Barra de búsqueda" />
+    </div>
+  </div>
+</ng-template>
+<ng-template pTemplate="header">
+  <tr>
+    <th pSortableColumn="id">ID <p-sortIcon field="id" /></th>
+    <th pSortableColumn="nombre">Nombre <p-sortIcon field="nombre" /></th>
+    <th pSortableColumn="apellidos">Apellidos <p-sortIcon field="apellidos" /></th>
+    <th pSortableColumn="fecha">Fecha <p-sortIcon field="fecha" /></th>
+    <th pSortableColumn="menu">Menú <p-sortIcon field="menu" /></th>
+    <th pSortableColumn="cantidad">Cantidad <p-sortIcon field="cantidad" /></th>
+    <th pSortableColumn="total">Acciones <p-sortIcon field="total" /></th>
+  </tr>
+</ng-template>
+<ng-template pTemplate="body" let-pedido>
+  <tr>
+    <td class="table-cell">{{ pedido.id }}</td>
+    <td class="table-cell">{{ pedido.nombre }}</td>
+    <td class="table-cell">{{ pedido.apellidos }}</td>
+    <td class="table-cell">{{ pedido.fecha }}</td>
+    <td class="table-cell">{{ pedido.menu }}</td>
+    <td class="table-cell">{{ pedido.cantidad }}</td>
+    <td class="table-cell">{{ pedido.total }}</td>
+    <td>
+     <div class="action-buttons">
+  <p-button  (onClick)="onClickVerPedido(pedido)" class="p-button-rounded1" icon="pi pi-eye" label="Ver"severity="info"  />
+  <p-button (onClick)="onClickEditarPedido(pedido)" class="p-button-rounded2" icon="pi pi-pencil" label="Editar"severity="warning" />
+  <p-button class="p-button-rounded3" icon="pi pi-trash" label="Eliminar" severity="danger"/>
+</div>
+    </td>
+  </tr>
+</ng-template>
+</p-table>
