@@ -3,11 +3,11 @@ import {
 } from "./chunk-MVHEHYDM.js";
 import "./chunk-GGXX4XEC.js";
 import {
-  SharedModule
-} from "./chunk-H2J3WXS7.js";
-import {
   CommonModule
 } from "./chunk-MRUW4HX5.js";
+import {
+  SharedModule
+} from "./chunk-H2J3WXS7.js";
 import {
   ChangeDetectionStrategy,
   Component,

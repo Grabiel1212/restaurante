@@ -26,7 +26,7 @@ export class Menu02Component implements OnInit{
         console.log('Objeto único recuperado:', this.objunico);
       } else {
         console.error('No objunico found in localStorage.');
-        // Manejar caso sin objunico en localStorage
+        // Manejar caso sin objunico en localStorage xd x
       }
     }
   }
