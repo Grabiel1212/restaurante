@@ -16,6 +16,13 @@ import {
   DomHandler
 } from "./chunk-TSRJC6W6.js";
 import {
+  PrimeNGConfig,
+  PrimeTemplate,
+  SharedModule,
+  UniqueComponentId,
+  zindexutils
+} from "./chunk-H2J3WXS7.js";
+import {
   CommonModule,
   DOCUMENT,
   NgClass,
@@ -23,13 +30,6 @@ import {
   NgStyle,
   NgTemplateOutlet
 } from "./chunk-MRUW4HX5.js";
-import {
-  PrimeNGConfig,
-  PrimeTemplate,
-  SharedModule,
-  UniqueComponentId,
-  zindexutils
-} from "./chunk-H2J3WXS7.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,

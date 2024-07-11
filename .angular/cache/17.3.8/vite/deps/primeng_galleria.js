@@ -1,11 +1,11 @@
 import {
-  ChevronLeftIcon,
-  ChevronRightIcon
-} from "./chunk-PKM7J53W.js";
-import {
   WindowMaximizeIcon,
   WindowMinimizeIcon
 } from "./chunk-JZNQGQWY.js";
+import {
+  ChevronLeftIcon,
+  ChevronRightIcon
+} from "./chunk-PKM7J53W.js";
 import {
   FocusTrap,
   FocusTrapModule
@@ -19,13 +19,20 @@ import {
 import {
   Ripple,
   RippleModule
-} from "./chunk-FZ2CT4EA.js";
+} from "./chunk-YN37CH5R.js";
 import {
   TimesIcon
 } from "./chunk-5XCDMMXJ.js";
 import {
   DomHandler
 } from "./chunk-TSRJC6W6.js";
+import {
+  PrimeNGConfig,
+  PrimeTemplate,
+  SharedModule,
+  UniqueComponentId,
+  zindexutils
+} from "./chunk-H2J3WXS7.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -36,13 +43,6 @@ import {
   NgTemplateOutlet,
   isPlatformBrowser
 } from "./chunk-MRUW4HX5.js";
-import {
-  PrimeNGConfig,
-  PrimeTemplate,
-  SharedModule,
-  UniqueComponentId,
-  zindexutils
-} from "./chunk-H2J3WXS7.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,

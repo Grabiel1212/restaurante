@@ -1,6 +1,6 @@
 import {
   InputTextModule
-} from "./chunk-5KUSSNL6.js";
+} from "./chunk-Y2PM3OVU.js";
 import {
   TimesIcon
 } from "./chunk-5XCDMMXJ.js";
@@ -15,6 +15,12 @@ import {
   BaseIcon
 } from "./chunk-TSRJC6W6.js";
 import {
+  PrimeNGConfig,
+  PrimeTemplate,
+  SharedModule,
+  UniqueComponentId
+} from "./chunk-H2J3WXS7.js";
+import {
   CommonModule,
   DOCUMENT,
   NgClass,
@@ -23,12 +29,6 @@ import {
   NgStyle,
   NgTemplateOutlet
 } from "./chunk-MRUW4HX5.js";
-import {
-  PrimeNGConfig,
-  PrimeTemplate,
-  SharedModule,
-  UniqueComponentId
-} from "./chunk-H2J3WXS7.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,

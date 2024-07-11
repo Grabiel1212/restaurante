@@ -21,6 +21,13 @@ import {
   DomHandler
 } from "./chunk-TSRJC6W6.js";
 import {
+  PrimeNGConfig,
+  SharedModule,
+  TranslationKeys,
+  UniqueComponentId,
+  zindexutils
+} from "./chunk-H2J3WXS7.js";
+import {
   CommonModule,
   DOCUMENT,
   NgClass,
@@ -29,13 +36,6 @@ import {
   NgStyle,
   isPlatformBrowser
 } from "./chunk-MRUW4HX5.js";
-import {
-  PrimeNGConfig,
-  SharedModule,
-  TranslationKeys,
-  UniqueComponentId,
-  zindexutils
-} from "./chunk-H2J3WXS7.js";
 import {
   ApplicationRef,
   ChangeDetectionStrategy,
