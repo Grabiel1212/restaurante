@@ -11,10 +11,16 @@ import {
 import {
   Ripple,
   RippleModule
-} from "./chunk-FZ2CT4EA.js";
+} from "./chunk-YN37CH5R.js";
 import {
   BaseIcon
 } from "./chunk-TSRJC6W6.js";
+import {
+  Footer,
+  PrimeTemplate,
+  SharedModule,
+  UniqueComponentId
+} from "./chunk-H2J3WXS7.js";
 import {
   CommonModule,
   NgClass,
@@ -22,12 +28,6 @@ import {
   NgStyle,
   NgTemplateOutlet
 } from "./chunk-MRUW4HX5.js";
-import {
-  Footer,
-  PrimeTemplate,
-  SharedModule,
-  UniqueComponentId
-} from "./chunk-H2J3WXS7.js";
 import {
   ChangeDetectionStrategy,
   Component,

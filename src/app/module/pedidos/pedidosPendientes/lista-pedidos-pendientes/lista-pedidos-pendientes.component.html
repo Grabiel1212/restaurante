@@ -1,45 +1,38 @@
-<h1>Pedidos Pendientes</h1>
+<<h1>Pedidos Pendientes</h1>
 <p-table
-#tbalumosListar
-    [value]="pedidoss"
-    [paginator]="true"
-    [rows]="5"
-    [tableStyle]="{ 'min-width': '50rem' }"
-    [globalFilterFields]="['id', 'nombre', 'apellids', 'fecha','menu','cantidad','total']"
-    [rowsPerPageOptions]="[5, 10, 20]"
-    
-
-    
+  #TblPedidoListar
+  [value]="pedidoss"
+  [paginator]="true"
+  [rows]="5"
+  [tableStyle]="{ 'min-width': '50rem' }"
+  [globalFilterFields]="['id', 'nombre', 'apellidos', 'fecha', 'menu', 'cantidad', 'total']"
+  [rowsPerPageOptions]="[5, 10, 20]"
 >
-
-    <ng-template pTemplate="header">
-        <tr>
-            <th  pSortableColumn="id" >Id <p-sortIcon field="id" /></th>
-            <th  pSortableColumn="nombre" >nombre  <p-sortIcon field="nombre" /></th>
-            <th  pSortableColumn="apellidos" >apellidos<p-sortIcon field="apellidos" /></th>
-            <th  pSortableColumn="fecha" >fecha<p-sortIcon field="fecha" /></th>
-            <th  pSortableColumn="menu" >menu<p-sortIcon field="menu" /></th>
-            <th  pSortableColumn="cantidad" >cantidad<p-sortIcon field="cantidad" /></th>
-            <th  pSortableColumn="total" >total<p-sortIcon field="total" /></th>
-           
-        </tr>
-    </ng-template>
-    <ng-template pTemplate="body" let-pedidos>
-        <tr>
-            <td>{{ pedidos.id}}</td>
-            <td>{{ pedidos.nombre}}</td>
-            <td>{{ pedidos.apellidos}}</td>
-            <td>{{ pedidos.fecha}}</td>
-            <td>{{ pedidos.menu}}</td>
-            <td>{{ pedidos.cantidaad}}</td>
-            <td>{{ pedidos.total}}</td>
-          
-
-            <td>
-            <p-button [style]="ButtonStyle" icon="pi pi-eye" [rounded]="true" severity="info"/>
-            <p-button [style]="ButtonStyle" icon="pi pi-pencil" [rounded]="true" severity="warning" />
-            <p-button [style]="ButtonStyle"  icon="pi pi-trash" [rounded]="true" severity="danger" />
-            </td>
-        </tr>
-    </ng-template>
+  <ng-template pTemplate="header">
+    <tr>
+      <th pSortableColumn="id">Id <p-sortIcon field="id" /></th>
+      <th pSortableColumn="nombre">Nombre <p-sortIcon field="nombre" /></th>
+      <th pSortableColumn="apellidos">Apellidos <p-sortIcon field="apellidos" /></th>
+      <th pSortableColumn="fecha">Fecha <p-sortIcon field="fecha" /></th>
+      <th pSortableColumn="menu">Menu <p-sortIcon field="menu" /></th>
+      <th pSortableColumn="cantidad">Cantidad <p-sortIcon field="cantidad" /></th>
+      <th pSortableColumn="total">Total <p-sortIcon field="total" /></th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-pedido>
+    <tr>
+      <td>{{ pedido.id }}</td>
+      <td>{{ pedido.nombre }}</td>
+      <td>{{ pedido.apellidos }}</td>
+      <td>{{ pedido.fecha }}</td>
+      <td>{{ pedido.menu }}</td>
+      <td>{{ pedido.cantidad }}</td>
+      <td>{{ pedido.total }}</td>
+      <td>
+        <p-button (onClick)="onClickVerPedido(pedido)" class="p-button-rounded1" icon="pi pi-eye"  severity="info"></p-button>
+        <p-button (onClick)="onClickEditarPedido(pedido)" class="p-button-rounded2" icon="pi pi-pencil"  severity="warning"></p-button>
+        <p-button class="p-button-rounded3" icon="pi pi-trash"  severity="danger"></p-button>
+      </td>
+    </tr>
+  </ng-template>
 </p-table>

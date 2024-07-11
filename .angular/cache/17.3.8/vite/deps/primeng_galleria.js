@@ -11,6 +11,9 @@ import {
   FocusTrapModule
 } from "./chunk-NWXHYMKG.js";
 import {
+  TimesIcon
+} from "./chunk-5XCDMMXJ.js";
+import {
   animate,
   style,
   transition,
@@ -19,13 +22,17 @@ import {
 import {
   Ripple,
   RippleModule
-} from "./chunk-FZ2CT4EA.js";
-import {
-  TimesIcon
-} from "./chunk-5XCDMMXJ.js";
+} from "./chunk-YN37CH5R.js";
 import {
   DomHandler
 } from "./chunk-TSRJC6W6.js";
+import {
+  PrimeNGConfig,
+  PrimeTemplate,
+  SharedModule,
+  UniqueComponentId,
+  zindexutils
+} from "./chunk-H2J3WXS7.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -36,13 +43,6 @@ import {
   NgTemplateOutlet,
   isPlatformBrowser
 } from "./chunk-MRUW4HX5.js";
-import {
-  PrimeNGConfig,
-  PrimeTemplate,
-  SharedModule,
-  UniqueComponentId,
-  zindexutils
-} from "./chunk-H2J3WXS7.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
