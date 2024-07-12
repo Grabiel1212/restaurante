@@ -6,13 +6,13 @@
                 <div class="col-12 lg:col-6 mt-4">
                     <p-floatLabel>
                         <input [disabled]="isModoVer()" class="w-full" pInputText id="codigo" [(ngModel)]="pedido.id" />
-                        <label for="codigo">Numero Pedido</label>
+                        <label for="codigo">idcliente</label>
                     </p-floatLabel>
                 </div>  
                 <div class="col-12 lg:col-6 mt-4">
                     <p-floatLabel>
                         <input [disabled]="isModoVer()" class="w-full" pInputText id="nombre" [(ngModel)]="pedido.nombre" />
-                        <label for="nombre">Nombre</label>
+                        <label for="nombre">nombre cliente</label>
                     </p-floatLabel>
                 </div>
             </div>
@@ -21,13 +21,13 @@
                 <div class="col-12 lg:col-6 mt-4">
                     <p-floatLabel>
                         <input [disabled]="isModoVer()" class="w-full" pInputText id="apellidos" [(ngModel)]="pedido.apellidos" />
-                        <label for="apellidos">Apellidos</label>
+                        <label for="apellidos">menu</label>
                     </p-floatLabel>
                 </div>
                 <div class="col-12 lg:col-6 mt-4">
                     <p-floatLabel>
                         <input [disabled]="isModoVer()" class="w-full" pInputText id="fecha" [(ngModel)]="pedido.fecha" />
-                        <label for="fecha">Fecha</label>
+                        <label for="fecha">Fecha Envio</label>
                     </p-floatLabel>
                 </div>
             </div>
@@ -36,24 +36,29 @@
                 <div class="col-12 lg:col-6 mt-4">
                     <p-floatLabel>
                         <input [disabled]="isModoVer()" class="w-full" pInputText id="menu" [(ngModel)]="pedido.menu" />
-                        <label for="menu">Menú</label>
+                        <label for="menu">direccion</label>
                     </p-floatLabel>
                 </div>
 
                 <div class="col-12 lg:col-6 mt-4">
                     <p-floatLabel>
                         <input [disabled]="isModoVer()" class="w-full" pInputText id="cantidad" [(ngModel)]="pedido.cantidad" />
-                        <label for="cantidad">Cantidad</label>
+                        <label for="cantidad">preciounitario</label>
                     </p-floatLabel>
                 </div>
                 
                 <div class="col-12 lg:col-6 mt-4">
                     <p-floatLabel>
                         <input [disabled]="isModoVer()" class="w-full" pInputText id="total" [(ngModel)]="pedido.total" />
-                        <label for="total">Total</label>
+                        <label for="total">cantidad</label>
                     </p-floatLabel>
                 </div>
-                
+                <div class="col-12 lg:col-6 mt-4">
+                    <p-floatLabel>
+                        <input [disabled]="isModoVer()" class="w-full" pInputText id="total" [(ngModel)]="pedido.total" />
+                        <label for="total">total</label>
+                    </p-floatLabel>
+                </div>
             </div>
         </div>
     </div>

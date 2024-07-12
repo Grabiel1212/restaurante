@@ -20,22 +20,24 @@
 </ng-template>
 <ng-template pTemplate="header">
   <tr>
-    <th pSortableColumn="id">ID <p-sortIcon field="id" /></th>
-    <th pSortableColumn="nombre">Nombre <p-sortIcon field="nombre" /></th>
-    <th pSortableColumn="apellidos">Apellidos <p-sortIcon field="apellidos" /></th>
-    <th pSortableColumn="fecha">Fecha <p-sortIcon field="fecha" /></th>
-    <th pSortableColumn="menu">Menú <p-sortIcon field="menu" /></th>
-    <th pSortableColumn="cantidad">Cantidad <p-sortIcon field="cantidad" /></th>
-    <th pSortableColumn="total">Acciones <p-sortIcon field="total" /></th>
+    <th pSortableColumn="idcliente">idcliente <p-sortIcon field="idcliente" /></th>
+    <th pSortableColumn="nombre">nombre <p-sortIcon field="nombre" /></th>
+    <th pSortableColumn="menu">menu <p-sortIcon field="menu" /></th>
+    <th pSortableColumn="fecha_envio">fecha_envio<p-sortIcon field="fecha_envio" /></th>
+    <th pSortableColumn="direccion">direccion <p-sortIcon field="direccion" /></th>
+    <th pSortableColumn="preciounitario">precio unitario <p-sortIcon field="preciounitario" /></th>
+    <th pSortableColumn="cantidad">cantidad <p-sortIcon field="cantidad" /></th>
+    <th pSortableColumn="total">total <p-sortIcon field="total" /></th>
   </tr>
 </ng-template>
 <ng-template pTemplate="body" let-pedido>
   <tr>
     <td class="table-cell">{{ pedido.id }}</td>
     <td class="table-cell">{{ pedido.nombre }}</td>
-    <td class="table-cell">{{ pedido.apellidos }}</td>
-    <td class="table-cell">{{ pedido.fecha }}</td>
     <td class="table-cell">{{ pedido.menu }}</td>
+    <td class="table-cell">{{ pedido.fecha_envio }}</td>
+    <td class="table-cell">{{ pedido.direccion }}</td>
+    <td class="table-cell">{{ pedido.precio }}</td>
     <td class="table-cell">{{ pedido.cantidad }}</td>
     <td class="table-cell">{{ pedido.total }}</td>
     <td>

@@ -147,7 +147,7 @@ export class ListarPedidosEnviadosComponent {
           this.pedidosE[index] = data.pedido;
         }
       } else {
-        console.log('El modal se cerró sin guardar cambios.');
+        console.log('El modal se cerró sin guardar cambios.');  
       }
     });
   }
