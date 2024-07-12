@@ -1,9 +1,9 @@
 import {
   BaseIcon
-} from "./chunk-TSRJC6W6.js";
+} from "./chunk-ZAYOVKOO.js";
 import {
   UniqueComponentId
-} from "./chunk-H2J3WXS7.js";
+} from "./chunk-5IYYOYV5.js";
 import {
   Component,
   setClassMetadata,
@@ -19,7 +19,7 @@ import {
   ɵɵgetInheritedFactory,
   ɵɵnamespaceSVG,
   ɵɵproperty
-} from "./chunk-2QDPCBAK.js";
+} from "./chunk-CHRFX2HE.js";
 
 // node_modules/primeng/fesm2022/primeng-icons-plus.mjs
 var PlusIcon = class _PlusIcon extends BaseIcon {
@@ -92,4 +92,4 @@ var PlusIcon = class _PlusIcon extends BaseIcon {
 export {
   PlusIcon
 };
-//# sourceMappingURL=chunk-QUBTBV6X.js.map
+//# sourceMappingURL=chunk-JPM7NQLX.js.map

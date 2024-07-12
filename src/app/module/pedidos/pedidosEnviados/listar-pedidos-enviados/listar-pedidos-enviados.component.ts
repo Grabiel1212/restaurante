@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { Table, TableModule } from 'primeng/table';
 import { IconFieldModule } from 'primeng/iconfield';
@@ -9,6 +9,7 @@ import { TYPE_MODAL_CREAR,TYPE_MODAL_VER,TYPE_MODAL_EDITAR} from '../../../../sh
 import { FooterModalComponent } from '../../../../shared/components/footer-modal/footer-modal.component';
 import { PedidosModalComponent } from '../../pedidos-modal/pedidos-modal.component';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog'; // Asegúrate de importar DynamicDialogRef aquí
+import { ClienteService } from '../../../../core/services/cliente.service';
 
 @Component({
   selector: 'app-listar-pedidos-enviados',
@@ -18,10 +19,25 @@ import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog'; // Aseg
   styleUrls: ['./listar-pedidos-enviados.component.scss'],
   providers: [DialogService]
 })
-export class ListarPedidosEnviadosComponent {
+export class ListarPedidosEnviadosComponent implements OnInit {
   @ViewChild('TblPedidoListar') TblPedidoListar: Table | undefined;
 
   ref: DynamicDialogRef | undefined;
+
+  constructor(
+    private dialogService: DialogService,// defino mis serviocs
+    private clienteService : ClienteService
+  ) {}
+
+
+  pedidosE: any= [];
+  async ngOnInit() {
+  
+
+    const response:any = await this.clienteService.listarCliente();
+    console.log('response',response);
+    this.pedidosE = response.data;
+  }
 
   ButtonStyle = {
     width: '2.3rem',
@@ -29,49 +45,11 @@ export class ListarPedidosEnviadosComponent {
     'margin-left': '1rem'
   };
 
-  pedidosE: Pedidosp[] = [
-    {
-      id: 1,
-      nombre: 'Cesar',
-      apellidos: 'Castillo Colca',
-      fecha: '12/6/2024',
-      menu: 'Mariscos',
-      cantidad: 2,
-      total: 85.2
-    },
-    {
-      id: 2,
-      nombre: 'Fabian',
-      apellidos: 'monterei camilo',
-      fecha: '12/6/2024',
-      menu: 'amburgesa',
-      cantidad: 2,
-      total: 12.6
-    },
-    {
-      id: 3,
-      nombre: 'Keyla',
-      apellidos: 'losano terres',
-      fecha: '17/6/2024',
-      menu: 'ceviche',
-      cantidad: 1,
-      total: 25.2
-    }
-  ];
+ 
 
-  nuevoPedido = {
-    id: 0,
-    nombre: '',
-    apellidos: '',
-    fecha: '',
-    menu: '',
-    cantidad: 0,
-    total: 0
-  };
 
-  constructor(private dialogService: DialogService) {}
 
-  ngOnInit(): void {}
+ 
 
   applyFilterGlobal($event: any, stringVal: string) {
     this.TblPedidoListar?.filterGlobal(
@@ -80,7 +58,10 @@ export class ListarPedidosEnviadosComponent {
     );
   }
 
+  
   onClickCrearPedido() {
+   
+    
     this.ref = this.dialogService.open(PedidosModalComponent, {
       header: 'Crear un Pedido',
       width: '80vw',
@@ -90,8 +71,9 @@ export class ListarPedidosEnviadosComponent {
       },
       data: {
         typeModal: TYPE_MODAL_CREAR,
-        data: this.nuevoPedido // Pasa el nuevo pedido al modal
+       // data: this.nuevoPedido // Pasa el nuevo pedido al modal
       }
+        
     });
 
     this.ref.onClose.subscribe((data: any) => {
@@ -100,7 +82,9 @@ export class ListarPedidosEnviadosComponent {
         // Por ejemplo, puedes agregarlo a la lista de pedidosE o realizar una llamada API para guardar en backend
       }
     });
+    
   }
+    
 
   onClickVerPedido(pedido: Pedidosp) {
     console.log('onClickVerPedido', pedido);
@@ -137,21 +121,28 @@ export class ListarPedidosEnviadosComponent {
       }
     });
 
+    
     this.ref.onClose.subscribe((data: any) => {
+      /*
       // Aquí puedes manejar la respuesta después de cerrar el modal de edición
       if (data && data.success) {
         // Actualizar el pedido modificado en la lista
         console.log('Pedido modificado:', data.pedido);
-        const index = this.pedidosE.findIndex(p => p.id === data.pedido.id);
+        const index = this.pedidosE.findIndex(=> p.id === data.pedido.id);
         if (index !== -1) {
           this.pedidosE[index] = data.pedido;
         }
       } else {
         console.log('El modal se cerró sin guardar cambios.');
       }
+        */
     });
+    
   }
 }
+
+
+
 
 
 

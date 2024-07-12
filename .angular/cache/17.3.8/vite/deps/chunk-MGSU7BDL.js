@@ -1,6 +1,6 @@
 import {
   BaseIcon
-} from "./chunk-TSRJC6W6.js";
+} from "./chunk-ZAYOVKOO.js";
 import {
   Component,
   setClassMetadata,
@@ -14,7 +14,7 @@ import {
   ɵɵelementStart,
   ɵɵgetInheritedFactory,
   ɵɵnamespaceSVG
-} from "./chunk-2QDPCBAK.js";
+} from "./chunk-CHRFX2HE.js";
 
 // node_modules/primeng/fesm2022/primeng-icons-chevronleft.mjs
 var ChevronLeftIcon = class _ChevronLeftIcon extends BaseIcon {
@@ -120,4 +120,4 @@ export {
   ChevronLeftIcon,
   ChevronRightIcon
 };
-//# sourceMappingURL=chunk-PKM7J53W.js.map
+//# sourceMappingURL=chunk-MGSU7BDL.js.map

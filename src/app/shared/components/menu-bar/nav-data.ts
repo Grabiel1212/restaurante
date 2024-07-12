@@ -49,6 +49,15 @@ export const navbarData = [
   },
  
   
+  
+  {
+    routeLink: '/Principal/Usuario',
+    icon: 'fa fa-user',
+    label: 'usurio',
+    
+    expanded: false
+  },
+ 
 
 
 ];

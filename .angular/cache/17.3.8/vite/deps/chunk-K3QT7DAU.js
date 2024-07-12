@@ -1,11 +1,11 @@
 import {
   DomHandler
-} from "./chunk-TSRJC6W6.js";
+} from "./chunk-ZAYOVKOO.js";
 import {
   CommonModule,
   DOCUMENT,
   isPlatformBrowser
-} from "./chunk-MRUW4HX5.js";
+} from "./chunk-V4I6KYGB.js";
 import {
   Directive,
   ElementRef,
@@ -21,7 +21,7 @@ import {
   ɵɵdefineDirective,
   ɵɵdefineInjector,
   ɵɵdefineNgModule
-} from "./chunk-2QDPCBAK.js";
+} from "./chunk-CHRFX2HE.js";
 
 // node_modules/primeng/fesm2022/primeng-focustrap.mjs
 var FocusTrap = class _FocusTrap {
@@ -156,4 +156,4 @@ export {
   FocusTrap,
   FocusTrapModule
 };
-//# sourceMappingURL=chunk-NWXHYMKG.js.map
+//# sourceMappingURL=chunk-K3QT7DAU.js.map
